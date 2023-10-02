@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("services", { page_name: "services" });
+  res.download("./public/pdfs/Resume_Maryam Afshar.pdf");
 });
 
 module.exports = router;
